@@ -23,6 +23,25 @@ body {
   background: #1d0e15;
 }
 
+section {
+  padding: 3rem 1rem;
+}
+
+.link-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: #ff5421;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.link-btn:hover {
+  background: #fff;
+  color: #ff5421;
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -86,9 +105,33 @@ body {
   color: #fff;
 }
 
+.home {
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home span {
+  font-size: 2.5rem;
+  color: #ff5421;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.home h3 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 1rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  .home h3 {
+    font-size: 3rem;
   }
 }
 
