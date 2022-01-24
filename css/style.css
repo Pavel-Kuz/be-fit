@@ -126,6 +126,45 @@ section {
   padding-top: 1rem;
 }
 
+.about span {
+  font-size: 2.5rem;
+  color: #ff5421;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.about h3 {
+  font-size: 2.7rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.about p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #ccc;
+  padding: .5rem 0;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #ccc;
+}
+
+.about ul i {
+  color: #ff5421;
+  padding-right: 1rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
