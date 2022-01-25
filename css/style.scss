@@ -331,6 +331,45 @@ section{
         }
     }
 }
+.footer{
+    background: url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .box-container{
+        @include grid(25rem);
+        .box{
+            h3{
+                @include title-text(2rem);
+                padding: 1rem 0;
+            }
+            a{
+                @include graphText(1.5rem);
+                padding: 0.5rem 0;
+                display: block;
+                i{
+                    padding-right: .7rem;
+                    color: $orange;
+                }
+                &:hover{
+                    color: $orange;
+                }
+            }
+            p{
+                @include graphText(1.6rem);
+            }
+            .email{
+                width: 100%;
+                padding: 1.2rem;
+                color: $black;
+                font-size: 1.6rem;
+                border: $border;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
 // media
 @media (max-width:991px){
     html{
