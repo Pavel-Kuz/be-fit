@@ -270,6 +270,22 @@ section{
         }
     }
 }
+.join{
+    span{
+        font-size: 2.5rem;
+        color: $orange;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    h3{
+        @include title-text(2.7rem);
+        padding-top: 1rem;
+    }
+    p{
+        padding: 1rem 0;
+        @include graphText(1.7rem);
+    }
+}
 // media
 @media (max-width:991px){
     html{
@@ -283,6 +299,11 @@ section{
         margin-bottom: 0;
         .box:nth-child(2){
             transform: scale(1);
+        }
+    }
+    .join {
+        h3{
+            font-size: 2.5rem;
         }
     }
 }
