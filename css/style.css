@@ -276,12 +276,84 @@ section {
   padding: .5rem 0;
 }
 
+.pricing .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.pricing .box-container .box {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  background: #1d0e15;
+  border-radius: .5rem;
+}
+
+.pricing .box-container .box:nth-child(2) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.pricing .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+.pricing .box-container .box .price {
+  padding: 1rem 0;
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pricing .box-container .box .price span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.pricing .box-container .box .list {
+  padding-top: 1rem;
+}
+
+.pricing .box-container .box .list p {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #ccc;
+}
+
+.pricing .box-container .box .list p i {
+  padding-right: 0.7rem;
+  color: #ff5421;
+}
+
+.pricing .box-container .box .list p i.fa-times {
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .home h3 {
     font-size: 3rem;
+  }
+  .pricing .box-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pricing .box-container .box:nth-child(2) {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
